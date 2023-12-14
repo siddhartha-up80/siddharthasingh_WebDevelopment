@@ -11,7 +11,7 @@ const SearchResultsPage = ({ searchResults, query }) => {
 
     
 
-  const handleInputChange = (event) => {
+  const handleInputChange = async (event) => {
       event.preventDefault()
       setSearchInput(event.target.value)
     }
@@ -20,11 +20,12 @@ const SearchResultsPage = ({ searchResults, query }) => {
     const searchGoogle = ()=>{
           const fetchData = async () => {
 
-             await new Promise((resolve) => setTimeout(resolve, 3000));
+
+             
             try {
               // Make the fetch request to the API route
               const response = await fetch(
-                `http://localhost:3000/api/googlesearch?q=${searchinput}`
+                `${process.env.NEXT_PUBLIC_HOST}/api/googlesearch?q=${searchinput}`
               );
 
               if (!response.ok) {
@@ -42,6 +43,7 @@ const SearchResultsPage = ({ searchResults, query }) => {
               // Handle errors if needed
             }
           };
+          
   fetchData();
          
     }

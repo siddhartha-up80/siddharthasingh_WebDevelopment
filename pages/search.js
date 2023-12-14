@@ -16,7 +16,7 @@ const Search = () => {
 
         // Make the fetch request to the API route
         const response = await fetch(
-          `http://localhost:3000/api/googlesearch?q=${query}`
+          `${process.env.NEXT_PUBLIC_HOST}/api/googlesearch?q=${query}`
         );
 
         if (!response.ok) {
