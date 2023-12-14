@@ -10,7 +10,7 @@ export default async function handler(req, res) {
           //   key: "AIzaSyAMzSVI2wP5-fqgyo7ZanonDp2N9xSq_NU", 
           key: "AIzaSyAMzSVI2wP5-fqgyo7ZanonDp2N9xSq_NU", 
           cx: "269545214e96044a6", 
-          q: req.query.q || "cars",
+          q: req.query.q || "nextjs",
         },
       }
     );

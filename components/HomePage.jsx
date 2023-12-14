@@ -110,7 +110,7 @@ const HomePage = () => {
                 }
               }}
             >
-              I'm Feeling Lucky
+              I&apos;m Feeling Lucky
             </button>
           </div>
         </div>
@@ -122,7 +122,7 @@ const HomePage = () => {
             <a href="">Terms</a>
             <a href="">Settings</a>
           </div>
-         
+
           <div className="flex flex-row gap-x-5">
             <a href="">India</a>
             <a href="">About</a>
